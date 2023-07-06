@@ -1,0 +1,63 @@
+/***********************************************************/
+@font-face {
+  font-family: "BN regular";
+  src: url("/fonts/BebasNeue-Regular.ttf") format("truetype");
+  /* url('fonts/CustomFont-Regular.woff') format('woff'); */
+
+  /* Additional font properties */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bestina Signature";
+  src: url("/fonts/Bestina Signature.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cartoon";
+  src: url("/fonts/From Cartoon Blocks.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+/***********************************************************/
+
+header {
+  font-family: "Cartoon";
+  font-size: 200;
+  background-color: #ad1;
+}
+
+body {
+  font-family: "Cartoon";
+  font-size: 100;
+  background-color: #ad1;
+  overflow: visible;
+}
+
+#intro {
+  margin-top: 64px;
+}
+
+/* self-defined navbar class */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  z-index: 5;
+  background-color: #fff;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  opacity: 64%;
+}
+
+.name {
+  text-decoration: None;
+  position: absolute;
+  font-size: 64;
+}

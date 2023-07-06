@@ -1,0 +1,2 @@
+# To configure: https://cloud.google.com/appengine/docs/standard/reference/app-yaml?tab=node.js#top
+runtime: nodejs18

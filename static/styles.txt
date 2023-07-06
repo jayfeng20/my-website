@@ -1,0 +1,40 @@
+1. Use sans-serif and serif for situations where fonts cannot be loaded in certain browsers 
+2. Refer to https://www.unm.edu/~tbeach/IT145/color.html for text colors
+3. Overflow : [visible] (default): Content overflows the container without any clipping. 
+                It may extend beyond the container's boundaries.
+            [hidden]: Content that exceeds the container's dimensions is 
+                clipped and not displayed. It is effectively hidden from view.
+            [scroll]: Adds both horizontal and vertical scrollbars to the container,
+                allowing the user to scroll and view the overflowed content.
+            [auto:] Similar to scroll, this value adds scrollbars only if necessary. 
+                If the content fits within the container, no scrollbars are displayed. 
+                If content overflows, scrollbars appear to enable scrolling.
+
+4. <h1> - <h6>: These elements represent headings of different levels, with <h1> 
+being the highest level and <h6> being the lowest level. 
+They are used to indicate the hierarchical structure and importance of headings within a document.
+
+<p>: The <p> element is used to define paragraphs of text. It is commonly used to structure and 
+format blocks of text within the content of a web page.
+
+<ul>, <ol>, <li>: These elements are used to create lists. <ul> represents an unordered (bullet) list, 
+<ol> represents an ordered (numbered) list, and <li> represents individual list items within those lists.
+
+<img>: The <img> element is used to embed images into a web page. 
+It requires the src attribute to specify the image URL and can include additional attributes like alt 
+for alternative text and width/height to define the image dimensions.
+
+<table>, <tr>, <td>: These elements are used to create HTML tables. <table> represents the entire table, 
+<tr> represents table rows, and <td> represents table cells. They allow you to organize data in rows and columns.
+
+<form>, <input>, <button>: These elements are used to create interactive forms. <form> represents a form container, 
+<input> is used to create form input fields (e.g., text, password, checkbox), and <button> is used to create clickable buttons within a form.
+
+<span>: The <span> element is an inline-level element used for grouping and applying styles to a specific section of text 
+or inline content within a larger block of text.
+
+<section>, <article>, <aside>, <header>, <footer>: These elements are used for semantic structuring of web pages. 
+<section> represents a standalone section, <article> represents a self-contained composition,
+<aside> represents content related to the main content, 
+<header> represents the introductory content or the header of a section, 
+and <footer> represents the footer of a section or the entire page.

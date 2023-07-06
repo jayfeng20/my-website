@@ -1,0 +1,44 @@
+<!-- Just a quick reminder of html syntax for myself -->
+<!--
+    rel=
+    "icon": Specifies that the linked resource is an icon or favicon for the website.
+    "preload": Indicates that the linked resource should be preloaded by the browser.
+    "alternate": Specifies an alternate version of the document, such as an alternate language or alternate media type.
+
+    Inside <body>: 
+    <header>: The <header> element represents the introductory or container section of a webpage or a specific section 
+    within the document. It typically contains branding, site navigation, page title, or other introductory content. 
+    The <header> element is typically placed at the top of the page or within a specific section.
+
+    <nav>: The <nav> element represents a section of the webpage that contains navigation links, menus, or any other 
+    type of navigation system. It is used to define a block of navigation-related content that assists users 
+    in navigating within the website or to other pages.
+
+    <main>: The <main> element represents the main content area of the webpage. It should contain the primary 
+    content that is unique to the specific document. It is recommended to have only one <main> element per 
+    page to mark the main content section.
+
+    <footer>: The <footer> element represents the footer section of a webpage. It typically contains 
+    information about the author, copyright notices, contact information, site-wide navigation links, 
+    or any other content that belongs to the bottom of the page.
+    -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title> My Website </title>
+  </head>
+
+  {{!-- {{> _navbar}} --}}
+
+  <body>
+    {{> _main}}
+    {{!-- <header>Intro:</header> --}}
+    <div id="intro">Hello! This is Jonathan's home page.</div>
+    <img src="pictures/farmer's market.png" height="670.8" width="505.6" />
+    <div id="second_intro">Hello! This is Jonathan's home page.</div>
+    <div>Hello! This is Jonathan's home page.</div>
+    <div>Hello! This is Jonathan's home page.</div>
+  </body>
+</html>
