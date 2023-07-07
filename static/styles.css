@@ -1,4 +1,11 @@
 /***********************************************************/
+
+/* Common Properties: All required to make icons render reliably */
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
 @font-face {
   font-family: "BN regular";
   src: url("/fonts/BebasNeue-Regular.ttf") format("truetype");
@@ -38,12 +45,45 @@ body {
   overflow: visible;
 }
 
+/***********************************************************/
+/* ids */
+
 #intro {
   margin-top: 64px;
 }
 
+#dropdown::before {
+  display: inline-block;
+  font: var(--fa-font-solid);
+  content: "\f150";
+  position: absolute;
+  right: 16;
+  top: 16;
+}
+
+#dropdown:hover {
+  color: rgb(228, 197, 72);
+}
+
+#menu-overlay {
+  width: 0;
+  opacity: 0.7;
+  background: rgb(228, 197, 72);
+  height: 100%;
+  z-index: 9;
+  top: 64;
+  left: 0;
+  position: fixed;
+  transition: width 0.5s ease-out, opacity 1s ease;
+}
+
+/***********************************************************/
+
+/*classes*/
+
 /* self-defined navbar class */
 .navbar {
+  font-size: 64;
   position: fixed;
   top: 0;
   left: 0;
@@ -54,10 +94,60 @@ body {
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
   text-align: left;
   opacity: 64%;
+  overflow: auto;
+}
+
+.icon {
+  font-size: 32;
+}
+/* Uses css pseudo-element to add icon */
+.navbar::before {
+  font: var(--fa-font-solid);
+  content: "\e574";
+  color: rgb(201, 28, 28);
+  position: relative;
+  top: 0;
 }
 
 .name {
   text-decoration: None;
-  position: absolute;
+  position: static;
   font-size: 64;
+}
+
+.menu-slide {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color: rgb(14, 92, 43);
+  transition: width 0.75s ease-out;
+  padding-top: 60;
+  overflow-x: hidden;
+}
+
+.menu-slide a {
+  padding: 8 8 8 32;
+  text-decoration: none;
+  font-size: 30;
+  color: black;
+  display: block;
+  text-transform: uppercase;
+  font-family: "BN regular";
+  letter-spacing: 5;
+}
+
+.menu-slide a:hover {
+  color: rgb(228, 197, 72);
+}
+
+.menu-slide .menu-x {
+  padding: 0 0 0 20;
+  margin-top: 0;
+  position: absolute;
+  top: 0;
+  right: 16;
+  margin-left: 50;
 }

@@ -38,3 +38,4 @@ or inline content within a larger block of text.
 <aside> represents content related to the main content, 
 <header> represents the introductory content or the header of a section, 
 and <footer> represents the footer of a section or the entire page.
+

@@ -1,0 +1,5 @@
+icon 
+navbar 
+name 
+slide-menu 
+menu-x

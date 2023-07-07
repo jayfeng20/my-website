@@ -1,20 +1,19 @@
 <!-- _navbar.html -->
 <div class="navbar">
-  <a class="navbar-brand" href="/">Logo</a>
-  <nav>
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="/home">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/services">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
+  <a class="name" href="/">Jonathan Feng</a>
+  <i id="dropdown" class="icon" onclick="openMenu()"></i>
 </div>
+<div id="menu-overlay"></div>
+<div id="menu-slide" class="menu-slide">
+  <a href="javascript:void(0)" class="menu-x" onclick="closeMenu()">&times;</a>
+  <a href="/work">work</a>
+  <a href="/about">about</a>
+  <a href="/contact">contact</a>
+</div>
+
+<script>
+  function openMenu() { document.getElementById("menu-slide").style.width =
+  '175'; document.getElementById('menu-overlay').style.width = "100%"; }
+  function closeMenu() { document.getElementById("menu-slide").style.width =
+  '0'; document.getElementById("menu-overlay").style.width = '0'; }
+</script>
